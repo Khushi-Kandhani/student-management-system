@@ -1,0 +1,109 @@
+.student-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.list-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.error-message {
+  background-color: #fadbd8;
+  color: #a93226;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #e74c3c;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.no-students {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.total-students {
+  text-align: right;
+  padding-top: 1rem;
+  border-top: 2px solid #ecf0f1;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.total-students strong {
+  color: #3498db;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .student-list-container {
+    padding: 1rem;
+  }
+
+  .list-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .list-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .search-box {
+    min-width: auto;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
