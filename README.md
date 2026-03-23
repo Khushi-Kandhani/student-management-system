@@ -617,28 +617,7 @@ docker-compose restart postgres
 
 ---
 
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-
----
-
-## 📞 Support
-
-For issues or questions:
-- Create a GitHub Issue
-- Email: your.email@example.com
-
----
-
+ 
 ## 🙏 Acknowledgments
 
 - PostgreSQL documentation
@@ -646,6 +625,6 @@ For issues or questions:
 - Sequelize ORM
 - Docker documentation
 
----
+ 
 
-**Ready to build? Start with:** `docker-compose up` 🚀
+ 
